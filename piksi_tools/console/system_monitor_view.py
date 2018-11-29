@@ -123,7 +123,8 @@ class SystemMonitorView(HasTraits):
                                 style='readonly',
                                 format_str='%dms'),
                             label='Period',
-                        show_border=True, ),
+                            show_border=True
+                            ),
                         Item(
                             '_csac_telem_list',
                             style='readonly',
