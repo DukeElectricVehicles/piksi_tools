@@ -2444,3 +2444,30 @@
   default value: N/A
   readonly: true
   Description: inertial navigation system build date
+
+- group: pps
+  name: propagation_mode
+  expert: false
+  type: enum
+  units: N/A
+  default value: Time Limited
+  enumerated possible values: None,Time Limited,Unlimited
+  Description: Configures the behavior of the PPS when no GNSS fix is available.
+
+- group: pps
+  name: propagation_timeout
+  expert: false
+  type: float 
+  units: seconds
+  default value: '5'
+  readonly: false
+  Description: Configures the timeout length of the PPS when using the "Time Limited" propagation mode.
+
+- group: csac
+  name: telemetry_enabled
+  expert: false
+  type: boolean
+  units: N/A
+  default value: 'false'
+  readonly: false
+  Description: Enables or disables the CSAC daemon which can communicate with Microsemi timing devices on UART0
